@@ -1,0 +1,25 @@
+!SESSION 2017-07-03 13:10:27.519 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_111
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=fr_CA
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86 -product org.eclipse.epp.package.cpp.product -data .
+
+!ENTRY org.eclipse.cdt.core 1 0 2017-07-03 13:18:41.374
+!MESSAGE Indexed 'TP3Main' (0 sources, 0 headers) in 0,003 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0 %)
+
+!ENTRY org.eclipse.cdt.core 1 0 2017-07-03 13:19:17.604
+!MESSAGE Indexed 'TP3Archive' (0 sources, 0 headers) in 0,001 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0 %)
+
+!ENTRY org.eclipse.cdt.core 1 0 2017-07-03 13:19:33.577
+!MESSAGE Indexed 'TP3Test' (0 sources, 0 headers) in 0,001 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0 %)
+
+!ENTRY org.eclipse.cdt.core 1 0 2017-07-03 13:47:15.832
+!MESSAGE Indexed 'TP3' (1 sources, 174 headers) in 6,16 sec: 16 555 declarations; 30 128 references; 0 unresolved inclusions; 0 syntax errors; 19 unresolved names (0,041 %)
+
+!ENTRY org.eclipse.cdt.core 1 0 2017-07-03 13:47:30.522
+!MESSAGE Indexed 'TP3Archive' (0 sources, 0 headers) in 0,001 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0 %)
+
+!ENTRY org.eclipse.cdt.core 1 0 2017-07-03 13:49:41.407
+!MESSAGE Indexed 'TP3Main' (1 sources, 173 headers) in 4,19 sec: 16 523 declarations; 30 404 references; 0 unresolved inclusions; 0 syntax errors; 19 unresolved names (0,04 %)

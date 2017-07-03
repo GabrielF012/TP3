@@ -1,0 +1,24 @@
+14:14:37 **** Incremental Build of configuration Debug for project TP3Main ****
+make all 
+make: rien à faire pour « all ».
+14:17:21 **** Incremental Build of configuration Debug for project TP3Main ****
+make all 
+make: rien à faire pour « all ».
+16:11:20 **** Incremental Build of configuration Debug for project TP3Archive ****
+make all 
+make: rien à faire pour « all ».
+16:11:21 **** Incremental Build of configuration Debug for project TP3Main ****
+make all 
+make: rien à faire pour « all ».
+16:11:21 **** Incremental Build of configuration Debug for project TP3Test ****
+make all 
+Building file: ../TP3Test.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -I"/home/etudiant/Bureau/TP3/TP3Archive" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"TP3Test.d" -MT"TP3Test.o" -o "TP3Test.o" "../TP3Test.cpp"
+Finished building: ../TP3Test.cpp
+ 
+Building target: TP3Test
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP3/TP3Archive/Debug" -o "TP3Test"  ./TP3Test.o   -lgtest -lgtest_main -lpthread -lTP3Archive
+Finished building target: TP3Test
+ 
