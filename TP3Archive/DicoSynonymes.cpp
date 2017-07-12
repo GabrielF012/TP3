@@ -15,43 +15,6 @@
 namespace TP3
 {
 
-DicoSynonymes::DicoSynonymes() {
-}
-
-DicoSynonymes::DicoSynonymes(std::ifstream& fichier) {
-}
-
-DicoSynonymes::~DicoSynonymes() {
-}
-
-void DicoSynonymes::ajouterRadical(const std::string& motRadical) {
-}
-
-void DicoSynonymes::ajouterFlexion(const std::string& motRadical,
-		const std::string& motFlexion) {
-}
-
-void DicoSynonymes::ajouterSynonyme(const std::string& motRadical,
-		const std::string& motSynonyme, int& numGroupe) {
-}
-
-void DicoSynonymes::supprimerRadical(const std::string& motRadical) {
-}
-
-void DicoSynonymes::supprimerFlexion(const std::string& motRadical,
-		const std::string& motFlexion) {
-}
-
-void DicoSynonymes::supprimerSynonyme(const std::string& motRadical,
-		const std::string& motSynonyme, int& numGroupe) {
-}
-
-bool DicoSynonymes::estVide() const {
-}
-
-int DicoSynonymes::nombreRadicaux() const {
-}
-
 	// Méthode fournie que vous pouvez modifier si vous voulez
 	void DicoSynonymes::chargerDicoSynonyme(std::ifstream& fichier)
 	{
@@ -98,24 +61,176 @@ int DicoSynonymes::nombreRadicaux() const {
 
 	//Mettez l'implantation des autres méthodes demandées ici.
 
-std::string DicoSynonymes::rechercherRadical(const std::string& mot) const {
-}
+	DicoSynonymes::DicoSynonymes():
+				nbRadicaux(0){
 
-float DicoSynonymes::similitude(const std::string& mot1,
-		const std::string& mot2) const {
-}
+	}
 
-int DicoSynonymes::getNombreSens(std::string radical) const {
-}
+	DicoSynonymes::DicoSynonymes(std::ifstream& fichier) {
+		chargerDicoSynonyme(fichier);
+	}
 
-std::string DicoSynonymes::getSens(std::string radical, int position) const {
-}
+	DicoSynonymes::~DicoSynonymes() {
+	}
 
-std::vector<std::string> DicoSynonymes::getSynonymes(std::string radical,
-		int position) const {
-}
+	void DicoSynonymes::ajouterRadical(const std::string& motRadical) {
+		_ajouterRadical(racine, motRadical);
+	}
 
-std::vector<std::string> DicoSynonymes::getFlexions(std::string radical) const {
-}
+	void DicoSynonymes::ajouterFlexion(const std::string& motRadical,
+			const std::string& motFlexion) {
+	}
 
-}//Fin du namespace
+	void DicoSynonymes::ajouterSynonyme(const std::string& motRadical,
+			const std::string& motSynonyme, int& numGroupe) {
+	}
+
+	void DicoSynonymes::supprimerRadical(const std::string& motRadical) {
+	}
+
+	void DicoSynonymes::supprimerFlexion(const std::string& motRadical,
+			const std::string& motFlexion) {
+	}
+
+	void DicoSynonymes::supprimerSynonyme(const std::string& motRadical,
+			const std::string& motSynonyme, int& numGroupe) {
+	}
+
+	bool DicoSynonymes::estVide() const {
+		return nbRadicaux == 0;
+	}
+
+	int DicoSynonymes::nombreRadicaux() const {
+		return nbRadicaux;
+	}
+
+	std::string DicoSynonymes::rechercherRadical(const std::string& mot) const {
+	}
+
+	float DicoSynonymes::similitude(const std::string& mot1,
+			const std::string& mot2) const {
+	}
+
+	int DicoSynonymes::getNombreSens(std::string radical) const {
+	}
+
+	std::string DicoSynonymes::getSens(std::string radical, int position) const {
+	}
+
+	std::vector<std::string> DicoSynonymes::getSynonymes(std::string radical,
+			int position) const {
+	}
+
+	std::vector<std::string> DicoSynonymes::getFlexions(std::string radical) const {
+	}
+
+	void DicoSynonymes::_ajouterRadical(NoeudDicoSynonymes *& noeud,
+			const std::string& motRadical) {
+		if (noeud == nullptr){
+			noeud = new NoeudDicoSynonymes(motRadical);
+		}else if (noeud->gauche->radical < motRadical){
+			_ajouterRadical(noeud->gauche, motRadical);
+		}else {
+			_ajouterRadical(noeud->droit, motRadical);
+		}
+
+		_miseAJourHauteurNoeud(noeud);
+		_balancerUnNoeud(noeud);
+
+	}
+
+	void DicoSynonymes::_miseAJourHauteurNoeud(NoeudDicoSynonymes *& noeud){
+		if(noeud != nullptr){
+			noeud->hauteur = 1 + std::max(_hauteur(noeud->gauche), _hauteur(noeud->droit));
+		}
+	}
+
+	int DicoSynonymes::_hauteur(NoeudDicoSynonymes *& noeud) const{
+			if (noeud == nullptr){
+				return -1;
+			}
+			return noeud->hauteur;
+		}
+
+	void DicoSynonymes::_balancerUnNoeud(NoeudDicoSynonymes *& noeud){
+		if (noeud == nullptr){
+			return;
+		}
+		if (_debalancementAGauche(noeud)){
+			if (_sousArbrePencheADroite(noeud->gauche)){
+				_zigZagGauche(noeud);
+			} else {
+				_zigZigGauche(noeud);
+			}
+		}else if (_debalancementADroite(noeud)){
+			if (_sousArbrePencheAGauche(noeud->droit)){
+				_zigZagDroite(noeud);
+			} else {
+				_zigZigDroite(noeud);
+			}
+		}
+	}
+
+	bool DicoSynonymes::_debalancementAGauche(NoeudDicoSynonymes*& noeud) const {
+		if (noeud == nullptr){
+			return false;
+		}
+		return _hauteur(noeud->gauche) - _hauteur(noeud->droit) >= 2;
+	}
+
+	bool DicoSynonymes::_debalancementADroite(NoeudDicoSynonymes*& noeud) const {
+		if (noeud == nullptr){
+				return false;
+		}
+		return _hauteur(noeud->droit) - _hauteur(noeud->gauche) >= 2;
+	}
+
+	bool DicoSynonymes::_sousArbrePencheAGauche(NoeudDicoSynonymes*& noeud) const {
+		if(noeud == nullptr){
+			return false;
+		}
+		return _hauteur(noeud->gauche) > _hauteur(noeud->droit);
+	}
+
+	bool DicoSynonymes::_sousArbrePencheADroite(NoeudDicoSynonymes*& noeud) const {
+		if(noeud == nullptr){
+			return false;
+		}
+		return _hauteur(noeud->droit) > _hauteur(noeud->gauche);
+	}
+
+	void DicoSynonymes::_zigZigGauche(NoeudDicoSynonymes*& noeudCritique) {
+		NoeudDicoSynonymes * noeudSousCritique = noeudCritique->gauche;
+		noeudCritique->gauche = noeudSousCritique->droit;
+		noeudSousCritique->droit = noeudCritique;
+
+		_miseAJourHauteurNoeud(noeudCritique);
+		_miseAJourHauteurNoeud(noeudSousCritique);
+
+		noeudCritique = noeudSousCritique;
+	}
+
+	void DicoSynonymes::_zigZigDroite(NoeudDicoSynonymes*& noeudCritique) {
+		NoeudDicoSynonymes * noeudSousCritique = noeudCritique->droit;
+		noeudCritique->droit = noeudSousCritique->gauche;
+		noeudSousCritique->gauche = noeudCritique;
+
+		_miseAJourHauteurNoeud(noeudCritique);
+		_miseAJourHauteurNoeud(noeudSousCritique);
+
+		noeudCritique = noeudSousCritique;
+	}
+
+	void DicoSynonymes::_zigZagGauche(NoeudDicoSynonymes*& noeud) {
+		_zigZigDroite(noeud->droit);
+		_zigZigGauche(noeud);
+	}
+
+	void DicoSynonymes::_zigZagDroite(NoeudDicoSynonymes*& noeud) {
+		_zigZigGauche(noeud->droit);
+		_zigZigDroite(noeud);
+	}
+
+
+} //Fin du namespace
+

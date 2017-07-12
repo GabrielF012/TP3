@@ -47,7 +47,7 @@ private:
 // --- Mode debug
 #if !defined(NDEBUG)
 #  define ASSERTION(f)     \
-      if (!(f)) throw AssertionException(__FILE__,__LINE__, #f)
+      if (!(f)) throw AssertionException(__FILE__,__LINE__, #f);
 
 // --- Mode release
 #else

@@ -1,6 +1,40 @@
-16:11:20 **** Incremental Build of configuration Debug for project TP3Archive ****
+16:19:39 **** Incremental Build of configuration Debug for project TP3Archive ****
 make all 
-make: rien à faire pour « all ».
+Building file: ../DicoSynonymes.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"DicoSynonymes.d" -MT"DicoSynonymes.o" -o "DicoSynonymes.o" "../DicoSynonymes.cpp"
+../DicoSynonymes.cpp: In member function ‘std::__cxx11::string TP3::DicoSynonymes::rechercherRadical(const string&) const’:
+../DicoSynonymes.cpp:108:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘float TP3::DicoSynonymes::similitude(const string&, const string&) const’:
+../DicoSynonymes.cpp:112:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘int TP3::DicoSynonymes::getNombreSens(std::__cxx11::string) const’:
+../DicoSynonymes.cpp:115:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘std::__cxx11::string TP3::DicoSynonymes::getSens(std::__cxx11::string, int) const’:
+../DicoSynonymes.cpp:118:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘std::vector<std::__cxx11::basic_string<char> > TP3::DicoSynonymes::getSynonymes(std::__cxx11::string, int) const’:
+../DicoSynonymes.cpp:122:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘std::vector<std::__cxx11::basic_string<char> > TP3::DicoSynonymes::getFlexions(std::__cxx11::string) const’:
+../DicoSynonymes.cpp:125:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+Finished building: ../DicoSynonymes.cpp
+ 
+Building target: libTP3Archive.a
+Invoking: GCC Archiver
+ar -r  "libTP3Archive.a"  ./DicoSynonymes.o   
+ar: création de libTP3Archive.a
+Finished building target: libTP3Archive.a
+ 
 
-16:11:21 Build Finished (took 231ms)
+16:19:40 Build Finished (took 897ms)
 

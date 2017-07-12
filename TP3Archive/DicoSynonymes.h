@@ -177,6 +177,18 @@ namespace TP3
 		std::vector< std::list<NoeudDicoSynonymes*> > groupesSynonymes;	// Tableau de groupes de synonymes dont chaque élément est une liste
       	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	// de pointeurs sur des noeuds de l'arbre représentant les radicaux.
       // Ajoutez vos méthodes privées ici !
+		void _ajouterRadical(NoeudDicoSynonymes *& noeud, const std::string& motRadical);
+		void _miseAJourHauteurNoeud(NoeudDicoSynonymes *& noeud);
+		int _hauteur(NoeudDicoSynonymes *& noeud) const;
+		void _balancerUnNoeud(NoeudDicoSynonymes *& noeud);
+		bool _debalancementAGauche(NoeudDicoSynonymes *& noeud) const;
+		bool _debalancementADroite(NoeudDicoSynonymes *& noeud) const;
+		bool _sousArbrePencheAGauche(NoeudDicoSynonymes *& noeud) const;
+		bool _sousArbrePencheADroite(NoeudDicoSynonymes *& noeud) const;
+		void _zigZigGauche(NoeudDicoSynonymes *& noeudCritique);
+		void _zigZigDroite(NoeudDicoSynonymes *& noeudCritique);
+		void _zigZagGauche(NoeudDicoSynonymes *& noeud);
+		void _zigZagDroite(NoeudDicoSynonymes *& noeud);
 
    };
 
