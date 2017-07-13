@@ -1,0 +1,11 @@
+#include "DicoSynonymes.h"
+#include "gtest/gtest.h"
+
+using namespace std;
+using namespace TP3;
+
+TEST(ArbreVide, Appartient){
+	DicoSynonymes DicoTest;
+	DicoTest.ajouterRadical("banane");
+	ASSERT_TRUE(dicoTest.appartient("banane"));
+}

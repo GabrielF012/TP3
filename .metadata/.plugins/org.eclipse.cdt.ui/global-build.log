@@ -767,3 +767,1203 @@ make: rien à faire pour « all ».
 16:19:40 **** Incremental Build of configuration Debug for project TP3Test ****
 make all 
 make: rien à faire pour « all ».
+11:43:45 **** Incremental Build of configuration Debug for project TP3Archive ****
+make all 
+Building file: ../DicoSynonymes.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"DicoSynonymes.d" -MT"DicoSynonymes.o" -o "DicoSynonymes.o" "../DicoSynonymes.cpp"
+../DicoSynonymes.cpp: In member function ‘void TP3::DicoSynonymes::supprimerRadical(const string&)’:
+../DicoSynonymes.cpp:90:30: error: ‘_enlever’ was not declared in this scope
+   _enlever(racine, motRadical);
+                              ^
+../DicoSynonymes.cpp: In member function ‘std::__cxx11::string TP3::DicoSynonymes::rechercherRadical(const string&) const’:
+../DicoSynonymes.cpp:111:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘float TP3::DicoSynonymes::similitude(const string&, const string&) const’:
+../DicoSynonymes.cpp:115:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘int TP3::DicoSynonymes::getNombreSens(std::__cxx11::string) const’:
+../DicoSynonymes.cpp:118:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘std::__cxx11::string TP3::DicoSynonymes::getSens(std::__cxx11::string, int) const’:
+../DicoSynonymes.cpp:121:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘std::vector<std::__cxx11::basic_string<char> > TP3::DicoSynonymes::getSynonymes(std::__cxx11::string, int) const’:
+../DicoSynonymes.cpp:125:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘std::vector<std::__cxx11::basic_string<char> > TP3::DicoSynonymes::getFlexions(std::__cxx11::string) const’:
+../DicoSynonymes.cpp:128:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+subdir.mk:18 : la recette pour la cible « DicoSynonymes.o » a échouée
+make: *** [DicoSynonymes.o] Erreur 1
+11:43:47 **** Incremental Build of configuration Debug for project TP3Main ****
+make all 
+Building file: ../Principal.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -I"/home/etudiant/Bureau/TP3/TP3Archive" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Principal.d" -MT"Principal.o" -o "Principal.o" "../Principal.cpp"
+Finished building: ../Principal.cpp
+ 
+Building target: TP3Main
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP3/TP3Archive/Debug" -o "TP3Main"  ./Principal.o   -lTP3Archive
+/usr/bin/ld : ne peut trouver -lTP3Archive
+collect2: error: ld returned 1 exit status
+make: *** [TP3Main] Erreur 1
+makefile:44 : la recette pour la cible « TP3Main » a échouée
+11:43:49 **** Incremental Build of configuration Debug for project TP3Test ****
+make all 
+make: rien à faire pour « all ».
+11:43:53 **** Incremental Build of configuration Debug for project TP3Archive ****
+make all 
+Building file: ../DicoSynonymes.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"DicoSynonymes.d" -MT"DicoSynonymes.o" -o "DicoSynonymes.o" "../DicoSynonymes.cpp"
+../DicoSynonymes.cpp: In member function ‘void TP3::DicoSynonymes::supprimerRadical(const string&)’:
+../DicoSynonymes.cpp:90:30: error: ‘_enlever’ was not declared in this scope
+   _enlever(racine, motRadical);
+                              ^
+../DicoSynonymes.cpp: In member function ‘std::__cxx11::string TP3::DicoSynonymes::rechercherRadical(const string&) const’:
+../DicoSynonymes.cpp:111:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘float TP3::DicoSynonymes::similitude(const string&, const string&) const’:
+../DicoSynonymes.cpp:115:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘int TP3::DicoSynonymes::getNombreSens(std::__cxx11::string) const’:
+../DicoSynonymes.cpp:118:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘std::__cxx11::string TP3::DicoSynonymes::getSens(std::__cxx11::string, int) const’:
+../DicoSynonymes.cpp:121:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘std::vector<std::__cxx11::basic_string<char> > TP3::DicoSynonymes::getSynonymes(std::__cxx11::string, int) const’:
+../DicoSynonymes.cpp:125:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘std::vector<std::__cxx11::basic_string<char> > TP3::DicoSynonymes::getFlexions(std::__cxx11::string) const’:
+../DicoSynonymes.cpp:128:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+subdir.mk:18 : la recette pour la cible « DicoSynonymes.o » a échouée
+make: *** [DicoSynonymes.o] Erreur 1
+11:43:54 **** Incremental Build of configuration Debug for project TP3Main ****
+make all 
+Building target: TP3Main
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP3/TP3Archive/Debug" -o "TP3Main"  ./Principal.o   -lTP3Archive
+/usr/bin/ld : ne peut trouver -lTP3Archive
+collect2: error: ld returned 1 exit status
+makefile:44 : la recette pour la cible « TP3Main » a échouée
+make: *** [TP3Main] Erreur 1
+11:43:54 **** Incremental Build of configuration Debug for project TP3Test ****
+make all 
+make: rien à faire pour « all ».
+11:44:15 **** Incremental Build of configuration Debug for project TP3Archive ****
+make all 
+Building file: ../DicoSynonymes.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"DicoSynonymes.d" -MT"DicoSynonymes.o" -o "DicoSynonymes.o" "../DicoSynonymes.cpp"
+../DicoSynonymes.cpp: In member function ‘std::__cxx11::string TP3::DicoSynonymes::rechercherRadical(const string&) const’:
+../DicoSynonymes.cpp:111:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘float TP3::DicoSynonymes::similitude(const string&, const string&) const’:
+../DicoSynonymes.cpp:115:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘int TP3::DicoSynonymes::getNombreSens(std::__cxx11::string) const’:
+../DicoSynonymes.cpp:118:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘std::__cxx11::string TP3::DicoSynonymes::getSens(std::__cxx11::string, int) const’:
+../DicoSynonymes.cpp:121:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘std::vector<std::__cxx11::basic_string<char> > TP3::DicoSynonymes::getSynonymes(std::__cxx11::string, int) const’:
+../DicoSynonymes.cpp:125:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘std::vector<std::__cxx11::basic_string<char> > TP3::DicoSynonymes::getFlexions(std::__cxx11::string) const’:
+../DicoSynonymes.cpp:128:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+Finished building: ../DicoSynonymes.cpp
+ 
+Building target: libTP3Archive.a
+Invoking: GCC Archiver
+ar -r  "libTP3Archive.a"  ./DicoSynonymes.o   
+ar: création de libTP3Archive.a
+Finished building target: libTP3Archive.a
+ 
+11:44:17 **** Incremental Build of configuration Debug for project TP3Main ****
+make all 
+Building target: TP3Main
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP3/TP3Archive/Debug" -o "TP3Main"  ./Principal.o   -lTP3Archive
+Finished building target: TP3Main
+ 
+11:44:17 **** Incremental Build of configuration Debug for project TP3Test ****
+make all 
+make: rien à faire pour « all ».
+12:05:27 **** Incremental Build of configuration Debug for project TP3Archive ****
+make all 
+Building file: ../DicoSynonymes.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"DicoSynonymes.d" -MT"DicoSynonymes.o" -o "DicoSynonymes.o" "../DicoSynonymes.cpp"
+../DicoSynonymes.cpp: In member function ‘std::__cxx11::string TP3::DicoSynonymes::rechercherRadical(const string&) const’:
+../DicoSynonymes.cpp:110:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘float TP3::DicoSynonymes::similitude(const string&, const string&) const’:
+../DicoSynonymes.cpp:114:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘int TP3::DicoSynonymes::getNombreSens(std::__cxx11::string) const’:
+../DicoSynonymes.cpp:117:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘std::__cxx11::string TP3::DicoSynonymes::getSens(std::__cxx11::string, int) const’:
+../DicoSynonymes.cpp:120:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘std::vector<std::__cxx11::basic_string<char> > TP3::DicoSynonymes::getSynonymes(std::__cxx11::string, int) const’:
+../DicoSynonymes.cpp:124:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘std::vector<std::__cxx11::basic_string<char> > TP3::DicoSynonymes::getFlexions(std::__cxx11::string) const’:
+../DicoSynonymes.cpp:127:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘void TP3::DicoSynonymes::_enleverRadical(TP3::DicoSynonymes::NoeudDicoSynonymes*&, const string&)’:
+../DicoSynonymes.cpp:260:54: error: ‘_min’ was not declared in this scope
+     NoeudDicoSynonymes * minDroit = _min(noeud->droit);
+                                                      ^
+../DicoSynonymes.cpp:261:22: error: ‘class TP3::DicoSynonymes::NoeudDicoSynonymes’ has no member named ‘motRadical’
+     std::swap(noeud->motRadical, minDroit->motRadical);
+                      ^
+../DicoSynonymes.cpp:261:44: error: ‘class TP3::DicoSynonymes::NoeudDicoSynonymes’ has no member named ‘motRadical’
+     std::swap(noeud->motRadical, minDroit->motRadical);
+                                            ^
+../DicoSynonymes.cpp: In member function ‘bool TP3::DicoSynonymes::_aDeuxfils(TP3::DicoSynonymes::NoeudDicoSynonymes*&) const’:
+../DicoSynonymes.cpp:273:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+subdir.mk:18 : la recette pour la cible « DicoSynonymes.o » a échouée
+make: *** [DicoSynonymes.o] Erreur 1
+12:05:28 **** Incremental Build of configuration Debug for project TP3Main ****
+make all 
+Building file: ../Principal.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -I"/home/etudiant/Bureau/TP3/TP3Archive" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Principal.d" -MT"Principal.o" -o "Principal.o" "../Principal.cpp"
+Finished building: ../Principal.cpp
+ 
+Building target: TP3Main
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP3/TP3Archive/Debug" -o "TP3Main"  ./Principal.o   -lTP3Archive
+/usr/bin/ld : ne peut trouver -lTP3Archive
+collect2: error: ld returned 1 exit status
+makefile:44 : la recette pour la cible « TP3Main » a échouée
+make: *** [TP3Main] Erreur 1
+12:05:30 **** Incremental Build of configuration Debug for project TP3Test ****
+make all 
+make: rien à faire pour « all ».
+12:09:14 **** Incremental Build of configuration Debug for project TP3Archive ****
+make all 
+Building file: ../DicoSynonymes.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"DicoSynonymes.d" -MT"DicoSynonymes.o" -o "DicoSynonymes.o" "../DicoSynonymes.cpp"
+../DicoSynonymes.cpp: In member function ‘std::__cxx11::string TP3::DicoSynonymes::rechercherRadical(const string&) const’:
+../DicoSynonymes.cpp:110:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘float TP3::DicoSynonymes::similitude(const string&, const string&) const’:
+../DicoSynonymes.cpp:114:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘int TP3::DicoSynonymes::getNombreSens(std::__cxx11::string) const’:
+../DicoSynonymes.cpp:117:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘std::__cxx11::string TP3::DicoSynonymes::getSens(std::__cxx11::string, int) const’:
+../DicoSynonymes.cpp:120:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘std::vector<std::__cxx11::basic_string<char> > TP3::DicoSynonymes::getSynonymes(std::__cxx11::string, int) const’:
+../DicoSynonymes.cpp:124:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘std::vector<std::__cxx11::basic_string<char> > TP3::DicoSynonymes::getFlexions(std::__cxx11::string) const’:
+../DicoSynonymes.cpp:127:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘void TP3::DicoSynonymes::_enleverRadical(TP3::DicoSynonymes::NoeudDicoSynonymes*&, const string&)’:
+../DicoSynonymes.cpp:260:54: error: cannot convert ‘TP3::DicoSynonymes::NoeudDicoSynonymes’ to ‘TP3::DicoSynonymes::NoeudDicoSynonymes*’ in initialization
+     NoeudDicoSynonymes * minDroit = _min(noeud->droit);
+                                                      ^
+../DicoSynonymes.cpp:261:22: error: ‘class TP3::DicoSynonymes::NoeudDicoSynonymes’ has no member named ‘motRadical’
+     std::swap(noeud->motRadical, minDroit->motRadical);
+                      ^
+../DicoSynonymes.cpp:261:44: error: ‘class TP3::DicoSynonymes::NoeudDicoSynonymes’ has no member named ‘motRadical’
+     std::swap(noeud->motRadical, minDroit->motRadical);
+                                            ^
+../DicoSynonymes.cpp: At global scope:
+../DicoSynonymes.cpp:278:2: error: ‘NoeudDicoSynonymes’ does not name a type
+  NoeudDicoSynonymes DicoSynonymes::_min(NoeudDicoSynonymes* noeud) const {
+  ^
+make: *** [DicoSynonymes.o] Erreur 1
+subdir.mk:18 : la recette pour la cible « DicoSynonymes.o » a échouée
+12:09:15 **** Incremental Build of configuration Debug for project TP3Main ****
+make all 
+Building file: ../Principal.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -I"/home/etudiant/Bureau/TP3/TP3Archive" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Principal.d" -MT"Principal.o" -o "Principal.o" "../Principal.cpp"
+Finished building: ../Principal.cpp
+ 
+Building target: TP3Main
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP3/TP3Archive/Debug" -o "TP3Main"  ./Principal.o   -lTP3Archive
+/usr/bin/ld : ne peut trouver -lTP3Archive
+collect2: error: ld returned 1 exit status
+makefile:44 : la recette pour la cible « TP3Main » a échouée
+make: *** [TP3Main] Erreur 1
+12:09:16 **** Incremental Build of configuration Debug for project TP3Test ****
+make all 
+make: rien à faire pour « all ».
+12:23:48 **** Incremental Build of configuration Debug for project TP3Archive ****
+make all 
+Building file: ../DicoSynonymes.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"DicoSynonymes.d" -MT"DicoSynonymes.o" -o "DicoSynonymes.o" "../DicoSynonymes.cpp"
+../DicoSynonymes.cpp: In member function ‘std::__cxx11::string TP3::DicoSynonymes::rechercherRadical(const string&) const’:
+../DicoSynonymes.cpp:110:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘float TP3::DicoSynonymes::similitude(const string&, const string&) const’:
+../DicoSynonymes.cpp:114:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘int TP3::DicoSynonymes::getNombreSens(std::__cxx11::string) const’:
+../DicoSynonymes.cpp:117:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘std::__cxx11::string TP3::DicoSynonymes::getSens(std::__cxx11::string, int) const’:
+../DicoSynonymes.cpp:120:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘std::vector<std::__cxx11::basic_string<char> > TP3::DicoSynonymes::getSynonymes(std::__cxx11::string, int) const’:
+../DicoSynonymes.cpp:124:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘std::vector<std::__cxx11::basic_string<char> > TP3::DicoSynonymes::getFlexions(std::__cxx11::string) const’:
+../DicoSynonymes.cpp:127:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘void TP3::DicoSynonymes::_enleverRadical(TP3::DicoSynonymes::NoeudDicoSynonymes*&, const string&)’:
+../DicoSynonymes.cpp:261:22: error: ‘class TP3::DicoSynonymes::NoeudDicoSynonymes’ has no member named ‘motRadical’
+     std::swap(noeud->motRadical, minDroit->motRadical);
+                      ^
+../DicoSynonymes.cpp:261:44: error: ‘class TP3::DicoSynonymes::NoeudDicoSynonymes’ has no member named ‘motRadical’
+     std::swap(noeud->motRadical, minDroit->motRadical);
+                                            ^
+../DicoSynonymes.cpp: At global scope:
+../DicoSynonymes.cpp:278:2: error: ‘NoeudDicoSynonymes’ does not name a type
+  NoeudDicoSynonymes DicoSynonymes::Noeud* DicoSynonymes::_min(NoeudDicoSynonymes* noeud) const {
+  ^
+subdir.mk:18 : la recette pour la cible « DicoSynonymes.o » a échouée
+make: *** [DicoSynonymes.o] Erreur 1
+12:23:49 **** Incremental Build of configuration Debug for project TP3Main ****
+make all 
+Building file: ../Principal.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -I"/home/etudiant/Bureau/TP3/TP3Archive" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Principal.d" -MT"Principal.o" -o "Principal.o" "../Principal.cpp"
+Finished building: ../Principal.cpp
+ 
+Building target: TP3Main
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP3/TP3Archive/Debug" -o "TP3Main"  ./Principal.o   -lTP3Archive
+/usr/bin/ld : ne peut trouver -lTP3Archive
+collect2: error: ld returned 1 exit status
+make: *** [TP3Main] Erreur 1
+makefile:44 : la recette pour la cible « TP3Main » a échouée
+12:23:50 **** Incremental Build of configuration Debug for project TP3Test ****
+make all 
+make: rien à faire pour « all ».
+12:27:03 **** Incremental Build of configuration Debug for project TP3Archive ****
+make all 
+Building file: ../DicoSynonymes.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"DicoSynonymes.d" -MT"DicoSynonymes.o" -o "DicoSynonymes.o" "../DicoSynonymes.cpp"
+../DicoSynonymes.cpp: In member function ‘std::__cxx11::string TP3::DicoSynonymes::rechercherRadical(const string&) const’:
+../DicoSynonymes.cpp:110:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘float TP3::DicoSynonymes::similitude(const string&, const string&) const’:
+../DicoSynonymes.cpp:114:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘int TP3::DicoSynonymes::getNombreSens(std::__cxx11::string) const’:
+../DicoSynonymes.cpp:117:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘std::__cxx11::string TP3::DicoSynonymes::getSens(std::__cxx11::string, int) const’:
+../DicoSynonymes.cpp:120:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘std::vector<std::__cxx11::basic_string<char> > TP3::DicoSynonymes::getSynonymes(std::__cxx11::string, int) const’:
+../DicoSynonymes.cpp:124:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘std::vector<std::__cxx11::basic_string<char> > TP3::DicoSynonymes::getFlexions(std::__cxx11::string) const’:
+../DicoSynonymes.cpp:127:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘void TP3::DicoSynonymes::_enleverRadical(TP3::DicoSynonymes::NoeudDicoSynonymes*&, const string&)’:
+../DicoSynonymes.cpp:261:22: error: ‘class TP3::DicoSynonymes::NoeudDicoSynonymes’ has no member named ‘motRadical’
+     std::swap(noeud->motRadical, minDroit->motRadical);
+                      ^
+../DicoSynonymes.cpp:261:44: error: ‘class TP3::DicoSynonymes::NoeudDicoSynonymes’ has no member named ‘motRadical’
+     std::swap(noeud->motRadical, minDroit->motRadical);
+                                            ^
+../DicoSynonymes.cpp: At global scope:
+../DicoSynonymes.cpp:278:2: error: ‘NoeudDicoSynonymes’ does not name a type
+  NoeudDicoSynonymes* DicoSynonymes::_min(NoeudDicoSynonymes* noeud) const {
+  ^
+subdir.mk:18 : la recette pour la cible « DicoSynonymes.o » a échouée
+make: *** [DicoSynonymes.o] Erreur 1
+12:27:04 **** Incremental Build of configuration Debug for project TP3Main ****
+make all 
+Building target: TP3Main
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP3/TP3Archive/Debug" -o "TP3Main"  ./Principal.o   -lTP3Archive
+/usr/bin/ld : ne peut trouver -lTP3Archive
+makefile:44 : la recette pour la cible « TP3Main » a échouée
+collect2: error: ld returned 1 exit status
+make: *** [TP3Main] Erreur 1
+12:27:05 **** Incremental Build of configuration Debug for project TP3Test ****
+make all 
+make: rien à faire pour « all ».
+12:44:38 **** Incremental Build of configuration Debug for project TP3Archive ****
+make all 
+Building file: ../DicoSynonymes.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"DicoSynonymes.d" -MT"DicoSynonymes.o" -o "DicoSynonymes.o" "../DicoSynonymes.cpp"
+../DicoSynonymes.cpp: In member function ‘std::__cxx11::string TP3::DicoSynonymes::rechercherRadical(const string&) const’:
+../DicoSynonymes.cpp:110:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘float TP3::DicoSynonymes::similitude(const string&, const string&) const’:
+../DicoSynonymes.cpp:114:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘int TP3::DicoSynonymes::getNombreSens(std::__cxx11::string) const’:
+../DicoSynonymes.cpp:117:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘std::__cxx11::string TP3::DicoSynonymes::getSens(std::__cxx11::string, int) const’:
+../DicoSynonymes.cpp:120:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘std::vector<std::__cxx11::basic_string<char> > TP3::DicoSynonymes::getSynonymes(std::__cxx11::string, int) const’:
+../DicoSynonymes.cpp:124:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘std::vector<std::__cxx11::basic_string<char> > TP3::DicoSynonymes::getFlexions(std::__cxx11::string) const’:
+../DicoSynonymes.cpp:127:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: At global scope:
+../DicoSynonymes.cpp:278:2: error: ‘NoeudDicoSynonymes’ does not name a type
+  NoeudDicoSynonymes* DicoSynonymes::_min(NoeudDicoSynonymes* noeud) const {
+  ^
+make: *** [DicoSynonymes.o] Erreur 1
+subdir.mk:18 : la recette pour la cible « DicoSynonymes.o » a échouée
+12:44:39 **** Incremental Build of configuration Debug for project TP3Main ****
+make all 
+Building target: TP3Main
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP3/TP3Archive/Debug" -o "TP3Main"  ./Principal.o   -lTP3Archive
+/usr/bin/ld : ne peut trouver -lTP3Archive
+makefile:44 : la recette pour la cible « TP3Main » a échouée
+collect2: error: ld returned 1 exit status
+make: *** [TP3Main] Erreur 1
+12:44:39 **** Incremental Build of configuration Debug for project TP3Test ****
+make all 
+make: rien à faire pour « all ».
+12:50:07 **** Incremental Build of configuration Debug for project TP3Archive ****
+make all 
+Building file: ../DicoSynonymes.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"DicoSynonymes.d" -MT"DicoSynonymes.o" -o "DicoSynonymes.o" "../DicoSynonymes.cpp"
+../DicoSynonymes.cpp: In member function ‘std::__cxx11::string TP3::DicoSynonymes::rechercherRadical(const string&) const’:
+../DicoSynonymes.cpp:110:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘float TP3::DicoSynonymes::similitude(const string&, const string&) const’:
+../DicoSynonymes.cpp:114:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘int TP3::DicoSynonymes::getNombreSens(std::__cxx11::string) const’:
+../DicoSynonymes.cpp:117:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘std::__cxx11::string TP3::DicoSynonymes::getSens(std::__cxx11::string, int) const’:
+../DicoSynonymes.cpp:120:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘std::vector<std::__cxx11::basic_string<char> > TP3::DicoSynonymes::getSynonymes(std::__cxx11::string, int) const’:
+../DicoSynonymes.cpp:124:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘std::vector<std::__cxx11::basic_string<char> > TP3::DicoSynonymes::getFlexions(std::__cxx11::string) const’:
+../DicoSynonymes.cpp:127:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: At global scope:
+../DicoSynonymes.cpp:278:2: error: ‘NoeudDicoSynonymes’ does not name a type
+  NoeudDicoSynonymes* DicoSynonymes::_min(NoeudDicoSynonymes* noeud) const {
+  ^
+subdir.mk:18 : la recette pour la cible « DicoSynonymes.o » a échouée
+make: *** [DicoSynonymes.o] Erreur 1
+12:50:08 **** Incremental Build of configuration Debug for project TP3Main ****
+make all 
+Building file: ../Principal.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -I"/home/etudiant/Bureau/TP3/TP3Archive" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Principal.d" -MT"Principal.o" -o "Principal.o" "../Principal.cpp"
+Finished building: ../Principal.cpp
+ 
+Building target: TP3Main
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP3/TP3Archive/Debug" -o "TP3Main"  ./Principal.o   -lTP3Archive
+/usr/bin/ld : ne peut trouver -lTP3Archive
+collect2: error: ld returned 1 exit status
+makefile:44 : la recette pour la cible « TP3Main » a échouée
+make: *** [TP3Main] Erreur 1
+12:50:09 **** Incremental Build of configuration Debug for project TP3Test ****
+make all 
+make: rien à faire pour « all ».
+12:51:03 **** Incremental Build of configuration Debug for project TP3Archive ****
+make all 
+Building file: ../DicoSynonymes.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"DicoSynonymes.d" -MT"DicoSynonymes.o" -o "DicoSynonymes.o" "../DicoSynonymes.cpp"
+../DicoSynonymes.cpp: In member function ‘std::__cxx11::string TP3::DicoSynonymes::rechercherRadical(const string&) const’:
+../DicoSynonymes.cpp:110:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘float TP3::DicoSynonymes::similitude(const string&, const string&) const’:
+../DicoSynonymes.cpp:114:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘int TP3::DicoSynonymes::getNombreSens(std::__cxx11::string) const’:
+../DicoSynonymes.cpp:117:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘std::__cxx11::string TP3::DicoSynonymes::getSens(std::__cxx11::string, int) const’:
+../DicoSynonymes.cpp:120:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘std::vector<std::__cxx11::basic_string<char> > TP3::DicoSynonymes::getSynonymes(std::__cxx11::string, int) const’:
+../DicoSynonymes.cpp:124:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘std::vector<std::__cxx11::basic_string<char> > TP3::DicoSynonymes::getFlexions(std::__cxx11::string) const’:
+../DicoSynonymes.cpp:127:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘TP3::DicoSynonymes::NoeudDicoSynonymes* TP3::DicoSynonymes::_min(TP3::DicoSynonymes::NoeudDicoSynonymes*) const’:
+../DicoSynonymes.cpp:280:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+Finished building: ../DicoSynonymes.cpp
+ 
+Building target: libTP3Archive.a
+Invoking: GCC Archiver
+ar -r  "libTP3Archive.a"  ./DicoSynonymes.o   
+ar: création de libTP3Archive.a
+Finished building target: libTP3Archive.a
+ 
+12:51:05 **** Incremental Build of configuration Debug for project TP3Main ****
+make all 
+Building target: TP3Main
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP3/TP3Archive/Debug" -o "TP3Main"  ./Principal.o   -lTP3Archive
+Finished building target: TP3Main
+ 
+12:51:05 **** Incremental Build of configuration Debug for project TP3Test ****
+make all 
+make: rien à faire pour « all ».
+14:24:51 **** Incremental Build of configuration Debug for project TP3Archive ****
+make all 
+Building file: ../DicoSynonymes.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"DicoSynonymes.d" -MT"DicoSynonymes.o" -o "DicoSynonymes.o" "../DicoSynonymes.cpp"
+../DicoSynonymes.cpp: In member function ‘std::__cxx11::string TP3::DicoSynonymes::rechercherRadical(const string&) const’:
+../DicoSynonymes.cpp:110:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘float TP3::DicoSynonymes::similitude(const string&, const string&) const’:
+../DicoSynonymes.cpp:114:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘int TP3::DicoSynonymes::getNombreSens(std::__cxx11::string) const’:
+../DicoSynonymes.cpp:117:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘std::__cxx11::string TP3::DicoSynonymes::getSens(std::__cxx11::string, int) const’:
+../DicoSynonymes.cpp:120:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘std::vector<std::__cxx11::basic_string<char> > TP3::DicoSynonymes::getSynonymes(std::__cxx11::string, int) const’:
+../DicoSynonymes.cpp:124:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘std::vector<std::__cxx11::basic_string<char> > TP3::DicoSynonymes::getFlexions(std::__cxx11::string) const’:
+../DicoSynonymes.cpp:127:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: At global scope:
+../DicoSynonymes.cpp:286:74: error: ‘string’ does not name a type
+  bool DicoSynonymes::_appartient(NoeudDicoSynonymes const & noeud, const string & motRadical) const {
+                                                                          ^
+../DicoSynonymes.cpp:286:95: error: no ‘bool TP3::DicoSynonymes::_appartient(const TP3::DicoSynonymes::NoeudDicoSynonymes&, const int&) const’ member function declared in class ‘TP3::DicoSynonymes’
+  bool DicoSynonymes::_appartient(NoeudDicoSynonymes const & noeud, const string & motRadical) const {
+                                                                                               ^
+In file included from ../DicoSynonymes.cpp:12:0:
+../DicoSynonymes.h:162:9: error: ‘class TP3::DicoSynonymes::NoeudDicoSynonymes’ is private
+   class NoeudDicoSynonymes
+         ^
+../DicoSynonymes.cpp:286:34: error: within this context
+  bool DicoSynonymes::_appartient(NoeudDicoSynonymes const & noeud, const string & motRadical) const {
+                                  ^
+subdir.mk:18 : la recette pour la cible « DicoSynonymes.o » a échouée
+make: *** [DicoSynonymes.o] Erreur 1
+14:24:52 **** Incremental Build of configuration Debug for project TP3Main ****
+make all 
+Building file: ../Principal.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -I"/home/etudiant/Bureau/TP3/TP3Archive" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Principal.d" -MT"Principal.o" -o "Principal.o" "../Principal.cpp"
+Finished building: ../Principal.cpp
+ 
+Building target: TP3Main
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP3/TP3Archive/Debug" -o "TP3Main"  ./Principal.o   -lTP3Archive
+/usr/bin/ld : ne peut trouver -lTP3Archive
+collect2: error: ld returned 1 exit status
+make: *** [TP3Main] Erreur 1
+makefile:44 : la recette pour la cible « TP3Main » a échouée
+14:24:54 **** Incremental Build of configuration Debug for project TP3Test ****
+make all 
+make: rien à faire pour « all ».
+14:29:29 **** Incremental Build of configuration Debug for project TP3Archive ****
+make all 
+Building file: ../DicoSynonymes.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"DicoSynonymes.d" -MT"DicoSynonymes.o" -o "DicoSynonymes.o" "../DicoSynonymes.cpp"
+../DicoSynonymes.cpp: In member function ‘std::__cxx11::string TP3::DicoSynonymes::rechercherRadical(const string&) const’:
+../DicoSynonymes.cpp:110:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘float TP3::DicoSynonymes::similitude(const string&, const string&) const’:
+../DicoSynonymes.cpp:114:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘int TP3::DicoSynonymes::getNombreSens(std::__cxx11::string) const’:
+../DicoSynonymes.cpp:117:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘std::__cxx11::string TP3::DicoSynonymes::getSens(std::__cxx11::string, int) const’:
+../DicoSynonymes.cpp:120:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘std::vector<std::__cxx11::basic_string<char> > TP3::DicoSynonymes::getSynonymes(std::__cxx11::string, int) const’:
+../DicoSynonymes.cpp:124:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘std::vector<std::__cxx11::basic_string<char> > TP3::DicoSynonymes::getFlexions(std::__cxx11::string) const’:
+../DicoSynonymes.cpp:127:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘bool TP3::DicoSynonymes::_apartient(TP3::DicoSynonymes::NoeudDicoSynonymes* const&, const string&) const’:
+../DicoSynonymes.cpp:288:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+Finished building: ../DicoSynonymes.cpp
+ 
+Building target: libTP3Archive.a
+Invoking: GCC Archiver
+ar -r  "libTP3Archive.a"  ./DicoSynonymes.o   
+ar: création de libTP3Archive.a
+Finished building target: libTP3Archive.a
+ 
+14:29:30 **** Incremental Build of configuration Debug for project TP3Main ****
+make all 
+Building file: ../Principal.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -I"/home/etudiant/Bureau/TP3/TP3Archive" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Principal.d" -MT"Principal.o" -o "Principal.o" "../Principal.cpp"
+Finished building: ../Principal.cpp
+ 
+Building target: TP3Main
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP3/TP3Archive/Debug" -o "TP3Main"  ./Principal.o   -lTP3Archive
+Finished building target: TP3Main
+ 
+14:29:32 **** Incremental Build of configuration Debug for project TP3Test ****
+make all 
+make: rien à faire pour « all ».
+14:53:29 **** Incremental Build of configuration Debug for project TP3Archive ****
+make all 
+Building file: ../DicoSynonymes.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"DicoSynonymes.d" -MT"DicoSynonymes.o" -o "DicoSynonymes.o" "../DicoSynonymes.cpp"
+../DicoSynonymes.cpp: In member function ‘std::__cxx11::string TP3::DicoSynonymes::rechercherRadical(const string&) const’:
+../DicoSynonymes.cpp:110:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘float TP3::DicoSynonymes::similitude(const string&, const string&) const’:
+../DicoSynonymes.cpp:114:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘int TP3::DicoSynonymes::getNombreSens(std::__cxx11::string) const’:
+../DicoSynonymes.cpp:117:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘std::__cxx11::string TP3::DicoSynonymes::getSens(std::__cxx11::string, int) const’:
+../DicoSynonymes.cpp:120:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘std::vector<std::__cxx11::basic_string<char> > TP3::DicoSynonymes::getSynonymes(std::__cxx11::string, int) const’:
+../DicoSynonymes.cpp:124:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘std::vector<std::__cxx11::basic_string<char> > TP3::DicoSynonymes::getFlexions(std::__cxx11::string) const’:
+../DicoSynonymes.cpp:127:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘bool TP3::DicoSynonymes::_apartient(TP3::DicoSynonymes::NoeudDicoSynonymes* const&, const string&) const’:
+../DicoSynonymes.cpp:293:48: error: ‘_appartient’ was not declared in this scope
+    return _appartient(noeud->gauche, motRadical);
+                                                ^
+../DicoSynonymes.cpp:295:47: error: ‘_appartient’ was not declared in this scope
+    return _appartient(noeud->droit, motRadical);
+                                               ^
+subdir.mk:18 : la recette pour la cible « DicoSynonymes.o » a échouée
+make: *** [DicoSynonymes.o] Erreur 1
+14:53:30 **** Incremental Build of configuration Debug for project TP3Main ****
+make all 
+make: rien à faire pour « all ».
+14:53:30 **** Incremental Build of configuration Debug for project TP3Test ****
+make all 
+make: rien à faire pour « all ».
+14:53:43 **** Incremental Build of configuration Debug for project TP3Archive ****
+make all 
+Building file: ../DicoSynonymes.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"DicoSynonymes.d" -MT"DicoSynonymes.o" -o "DicoSynonymes.o" "../DicoSynonymes.cpp"
+../DicoSynonymes.cpp: In member function ‘std::__cxx11::string TP3::DicoSynonymes::rechercherRadical(const string&) const’:
+../DicoSynonymes.cpp:110:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘float TP3::DicoSynonymes::similitude(const string&, const string&) const’:
+../DicoSynonymes.cpp:114:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘int TP3::DicoSynonymes::getNombreSens(std::__cxx11::string) const’:
+../DicoSynonymes.cpp:117:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘std::__cxx11::string TP3::DicoSynonymes::getSens(std::__cxx11::string, int) const’:
+../DicoSynonymes.cpp:120:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘std::vector<std::__cxx11::basic_string<char> > TP3::DicoSynonymes::getSynonymes(std::__cxx11::string, int) const’:
+../DicoSynonymes.cpp:124:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘std::vector<std::__cxx11::basic_string<char> > TP3::DicoSynonymes::getFlexions(std::__cxx11::string) const’:
+../DicoSynonymes.cpp:127:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+Finished building: ../DicoSynonymes.cpp
+ 
+Building target: libTP3Archive.a
+Invoking: GCC Archiver
+ar -r  "libTP3Archive.a"  ./DicoSynonymes.o   
+ar: création de libTP3Archive.a
+Finished building target: libTP3Archive.a
+ 
+14:53:44 **** Incremental Build of configuration Debug for project TP3Main ****
+make all 
+Building file: ../Principal.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -I"/home/etudiant/Bureau/TP3/TP3Archive" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Principal.d" -MT"Principal.o" -o "Principal.o" "../Principal.cpp"
+Finished building: ../Principal.cpp
+ 
+Building target: TP3Main
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP3/TP3Archive/Debug" -o "TP3Main"  ./Principal.o   -lTP3Archive
+Finished building target: TP3Main
+ 
+14:53:45 **** Incremental Build of configuration Debug for project TP3Test ****
+make all 
+make: rien à faire pour « all ».
+15:02:49 **** Incremental Build of configuration Debug for project TP3Archive ****
+make all 
+Building file: ../DicoSynonymes.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"DicoSynonymes.d" -MT"DicoSynonymes.o" -o "DicoSynonymes.o" "../DicoSynonymes.cpp"
+../DicoSynonymes.cpp: In member function ‘std::__cxx11::string TP3::DicoSynonymes::rechercherRadical(const string&) const’:
+../DicoSynonymes.cpp:110:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘float TP3::DicoSynonymes::similitude(const string&, const string&) const’:
+../DicoSynonymes.cpp:114:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘int TP3::DicoSynonymes::getNombreSens(std::__cxx11::string) const’:
+../DicoSynonymes.cpp:117:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘std::__cxx11::string TP3::DicoSynonymes::getSens(std::__cxx11::string, int) const’:
+../DicoSynonymes.cpp:120:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘std::vector<std::__cxx11::basic_string<char> > TP3::DicoSynonymes::getSynonymes(std::__cxx11::string, int) const’:
+../DicoSynonymes.cpp:124:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘std::vector<std::__cxx11::basic_string<char> > TP3::DicoSynonymes::getFlexions(std::__cxx11::string) const’:
+../DicoSynonymes.cpp:127:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+Finished building: ../DicoSynonymes.cpp
+ 
+Building target: libTP3Archive.a
+Invoking: GCC Archiver
+ar -r  "libTP3Archive.a"  ./DicoSynonymes.o   
+ar: création de libTP3Archive.a
+Finished building target: libTP3Archive.a
+ 
+15:02:50 **** Incremental Build of configuration Debug for project TP3Main ****
+make all 
+Building file: ../Principal.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -I"/home/etudiant/Bureau/TP3/TP3Archive" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Principal.d" -MT"Principal.o" -o "Principal.o" "../Principal.cpp"
+Finished building: ../Principal.cpp
+ 
+Building target: TP3Main
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP3/TP3Archive/Debug" -o "TP3Main"  ./Principal.o   -lTP3Archive
+Finished building target: TP3Main
+ 
+15:02:51 **** Incremental Build of configuration Debug for project TP3Test ****
+make all 
+make: rien à faire pour « all ».
+15:10:00 **** Incremental Build of configuration Debug for project TP3Archive ****
+make all 
+Building file: ../DicoSynonymes.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"DicoSynonymes.d" -MT"DicoSynonymes.o" -o "DicoSynonymes.o" "../DicoSynonymes.cpp"
+../DicoSynonymes.cpp: In member function ‘std::__cxx11::string TP3::DicoSynonymes::rechercherRadical(const string&) const’:
+../DicoSynonymes.cpp:110:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘float TP3::DicoSynonymes::similitude(const string&, const string&) const’:
+../DicoSynonymes.cpp:114:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘int TP3::DicoSynonymes::getNombreSens(std::__cxx11::string) const’:
+../DicoSynonymes.cpp:117:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘std::__cxx11::string TP3::DicoSynonymes::getSens(std::__cxx11::string, int) const’:
+../DicoSynonymes.cpp:120:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘std::vector<std::__cxx11::basic_string<char> > TP3::DicoSynonymes::getSynonymes(std::__cxx11::string, int) const’:
+../DicoSynonymes.cpp:124:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘std::vector<std::__cxx11::basic_string<char> > TP3::DicoSynonymes::getFlexions(std::__cxx11::string) const’:
+../DicoSynonymes.cpp:127:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+Finished building: ../DicoSynonymes.cpp
+ 
+Building target: libTP3Archive.a
+Invoking: GCC Archiver
+ar -r  "libTP3Archive.a"  ./DicoSynonymes.o   
+ar: création de libTP3Archive.a
+Finished building target: libTP3Archive.a
+ 
+15:10:01 **** Incremental Build of configuration Debug for project TP3Main ****
+make all 
+make: rien à faire pour « all ».
+15:10:01 **** Incremental Build of configuration Debug for project TP3Test ****
+make all 
+make: rien à faire pour « all ».
+15:12:50 **** Incremental Build of configuration Debug for project TP3Archive ****
+make all 
+Building file: ../DicoSynonymes.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"DicoSynonymes.d" -MT"DicoSynonymes.o" -o "DicoSynonymes.o" "../DicoSynonymes.cpp"
+../DicoSynonymes.cpp: In member function ‘std::__cxx11::string TP3::DicoSynonymes::rechercherRadical(const string&) const’:
+../DicoSynonymes.cpp:111:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘float TP3::DicoSynonymes::similitude(const string&, const string&) const’:
+../DicoSynonymes.cpp:115:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘int TP3::DicoSynonymes::getNombreSens(std::__cxx11::string) const’:
+../DicoSynonymes.cpp:118:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘std::__cxx11::string TP3::DicoSynonymes::getSens(std::__cxx11::string, int) const’:
+../DicoSynonymes.cpp:121:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘std::vector<std::__cxx11::basic_string<char> > TP3::DicoSynonymes::getSynonymes(std::__cxx11::string, int) const’:
+../DicoSynonymes.cpp:125:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘std::vector<std::__cxx11::basic_string<char> > TP3::DicoSynonymes::getFlexions(std::__cxx11::string) const’:
+../DicoSynonymes.cpp:128:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+Finished building: ../DicoSynonymes.cpp
+ 
+Building target: libTP3Archive.a
+Invoking: GCC Archiver
+ar -r  "libTP3Archive.a"  ./DicoSynonymes.o   
+ar: création de libTP3Archive.a
+Finished building target: libTP3Archive.a
+ 
+15:12:51 **** Incremental Build of configuration Debug for project TP3Main ****
+make all 
+make: rien à faire pour « all ».
+15:12:52 **** Incremental Build of configuration Debug for project TP3Test ****
+make all 
+make: rien à faire pour « all ».
+15:20:06 **** Incremental Build of configuration Debug for project TP3Archive ****
+make all 
+Building file: ../DicoSynonymes.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"DicoSynonymes.d" -MT"DicoSynonymes.o" -o "DicoSynonymes.o" "../DicoSynonymes.cpp"
+../DicoSynonymes.cpp: In member function ‘std::__cxx11::string TP3::DicoSynonymes::rechercherRadical(const string&) const’:
+../DicoSynonymes.cpp:112:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘float TP3::DicoSynonymes::similitude(const string&, const string&) const’:
+../DicoSynonymes.cpp:116:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘int TP3::DicoSynonymes::getNombreSens(std::__cxx11::string) const’:
+../DicoSynonymes.cpp:119:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘std::__cxx11::string TP3::DicoSynonymes::getSens(std::__cxx11::string, int) const’:
+../DicoSynonymes.cpp:122:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘std::vector<std::__cxx11::basic_string<char> > TP3::DicoSynonymes::getSynonymes(std::__cxx11::string, int) const’:
+../DicoSynonymes.cpp:126:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘std::vector<std::__cxx11::basic_string<char> > TP3::DicoSynonymes::getFlexions(std::__cxx11::string) const’:
+../DicoSynonymes.cpp:129:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+Finished building: ../DicoSynonymes.cpp
+ 
+Building target: libTP3Archive.a
+Invoking: GCC Archiver
+ar -r  "libTP3Archive.a"  ./DicoSynonymes.o   
+ar: création de libTP3Archive.a
+Finished building target: libTP3Archive.a
+ 
+15:20:07 **** Incremental Build of configuration Debug for project TP3Main ****
+make all 
+make: rien à faire pour « all ».
+15:20:07 **** Incremental Build of configuration Debug for project TP3Test ****
+make all 
+Building file: ../TP3Test.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -I"/home/etudiant/Bureau/TP3/TP3Archive" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"TP3Test.d" -MT"TP3Test.o" -o "TP3Test.o" "../TP3Test.cpp"
+../TP3Test.cpp: In member function ‘virtual void ArbreVide_Appartient_Test::TestBody()’:
+../TP3Test.cpp:5:2: error: ‘DicoSynonymes’ was not declared in this scope
+  DicoSynonymes DicoTest;
+  ^
+../TP3Test.cpp:5:2: note: suggested alternative:
+In file included from ../TP3Test.cpp:1:0:
+/home/etudiant/Bureau/TP3/TP3Archive/DicoSynonymes.h:27:8: note:   ‘TP3::DicoSynonymes’
+  class DicoSynonymes
+        ^
+make: *** [TP3Test.o] Erreur 1
+subdir.mk:18 : la recette pour la cible « TP3Test.o » a échouée
+15:22:19 **** Incremental Build of configuration Debug for project TP3Archive ****
+make all 
+make: rien à faire pour « all ».
+15:22:19 **** Incremental Build of configuration Debug for project TP3Main ****
+make all 
+make: rien à faire pour « all ».
+15:22:19 **** Incremental Build of configuration Debug for project TP3Test ****
+make all 
+Building file: ../TP3Test.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -I"/home/etudiant/Bureau/TP3/TP3Archive" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"TP3Test.d" -MT"TP3Test.o" -o "TP3Test.o" "../TP3Test.cpp"
+Finished building: ../TP3Test.cpp
+ 
+Building target: TP3Test
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP3/TP3Archive/Debug" -o "TP3Test"  ./TP3Test.o   -lgtest -lgtest_main -lpthread -lTP3Archive
+Finished building target: TP3Test
+ 
+15:33:08 **** Incremental Build of configuration Debug for project TP3Archive ****
+make all 
+make: rien à faire pour « all ».
+15:33:09 **** Incremental Build of configuration Debug for project TP3Main ****
+make all 
+make: rien à faire pour « all ».
+15:33:09 **** Incremental Build of configuration Debug for project TP3Test ****
+make all 
+Building file: ../TP3Test.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -I"/home/etudiant/Bureau/TP3/TP3Archive" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"TP3Test.d" -MT"TP3Test.o" -o "TP3Test.o" "../TP3Test.cpp"
+In file included from /usr/include/gtest/gtest.h:58:0,
+                 from ../TP3Test.cpp:2:
+../TP3Test.cpp: In member function ‘virtual void ArbreVide_Appartient_Test::TestBody()’:
+../TP3Test.cpp:10:14: error: ‘dicoTest’ was not declared in this scope
+  ASSERT_TRUE(dicoTest.appartient("banane"));
+              ^
+subdir.mk:18 : la recette pour la cible « TP3Test.o » a échouée
+make: *** [TP3Test.o] Erreur 1
+15:33:16 **** Incremental Build of configuration Debug for project TP3Archive ****
+make all 
+make: rien à faire pour « all ».
+15:33:16 **** Incremental Build of configuration Debug for project TP3Main ****
+make all 
+make: rien à faire pour « all ».
+15:33:16 **** Incremental Build of configuration Debug for project TP3Test ****
+make all 
+Building file: ../TP3Test.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -I"/home/etudiant/Bureau/TP3/TP3Archive" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"TP3Test.d" -MT"TP3Test.o" -o "TP3Test.o" "../TP3Test.cpp"
+Finished building: ../TP3Test.cpp
+ 
+Building target: TP3Test
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP3/TP3Archive/Debug" -o "TP3Test"  ./TP3Test.o   -lgtest -lgtest_main -lpthread -lTP3Archive
+Finished building target: TP3Test
+ 
+15:33:20 **** Incremental Build of configuration Debug for project TP3Test ****
+make all 
+make: rien à faire pour « all ».
+15:34:57 **** Incremental Build of configuration Debug for project TP3Test ****
+make all 
+Building file: ../TP3Test.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -I"/home/etudiant/Bureau/TP3/TP3Archive" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"TP3Test.d" -MT"TP3Test.o" -o "TP3Test.o" "../TP3Test.cpp"
+In file included from ../TP3Test.cpp:1:0:
+/home/etudiant/Bureau/TP3/TP3Archive/DicoSynonymes.h: In member function ‘virtual void ArbreVide_NbRadicaux_Test::TestBody()’:
+/home/etudiant/Bureau/TP3/TP3Archive/DicoSynonymes.h:178:7: error: ‘int TP3::DicoSynonymes::nbRadicaux’ is private
+   int nbRadicaux;                                       // Nombre de noeuds dans l'arbre
+       ^
+In file included from /usr/include/gtest/gtest.h:1929:0,
+                 from ../TP3Test.cpp:2:
+../TP3Test.cpp:10:24: error: within this context
+  ASSERT_EQ(1, DicoTest.nbRadicaux);
+                        ^
+subdir.mk:18 : la recette pour la cible « TP3Test.o » a échouée
+make: *** [TP3Test.o] Erreur 1
+15:35:46 **** Incremental Build of configuration Debug for project TP3Archive ****
+make all 
+make: rien à faire pour « all ».
+15:35:46 **** Incremental Build of configuration Debug for project TP3Main ****
+make all 
+make: rien à faire pour « all ».
+15:35:46 **** Incremental Build of configuration Debug for project TP3Test ****
+make all 
+Building file: ../TP3Test.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -I"/home/etudiant/Bureau/TP3/TP3Archive" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"TP3Test.d" -MT"TP3Test.o" -o "TP3Test.o" "../TP3Test.cpp"
+Finished building: ../TP3Test.cpp
+ 
+Building target: TP3Test
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP3/TP3Archive/Debug" -o "TP3Test"  ./TP3Test.o   -lgtest -lgtest_main -lpthread -lTP3Archive
+Finished building target: TP3Test
+ 
+15:35:51 **** Incremental Build of configuration Debug for project TP3Test ****
+make all 
+make: rien à faire pour « all ».
+15:36:04 **** Incremental Build of configuration Debug for project TP3Test ****
+make all 
+make: rien à faire pour « all ».
+15:37:09 **** Incremental Build of configuration Debug for project TP3Test ****
+make all 
+make: rien à faire pour « all ».
+15:39:52 **** Incremental Build of configuration Debug for project TP3Test ****
+make all 
+make: rien à faire pour « all ».
+15:42:15 **** Incremental Build of configuration Debug for project TP3Archive ****
+make all 
+Building file: ../DicoSynonymes.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"DicoSynonymes.d" -MT"DicoSynonymes.o" -o "DicoSynonymes.o" "../DicoSynonymes.cpp"
+In file included from ../DicoSynonymes.cpp:12:0:
+../DicoSynonymes.h: In constructor ‘TP3::DicoSynonymes::DicoSynonymes()’:
+../DicoSynonymes.h:178:7: warning: ‘TP3::DicoSynonymes::nbRadicaux’ will be initialized after [-Wreorder]
+   int nbRadicaux;                                       // Nombre de noeuds dans l'arbre
+       ^
+../DicoSynonymes.h:177:23: warning:   ‘TP3::DicoSynonymes::NoeudDicoSynonymes* TP3::DicoSynonymes::racine’ [-Wreorder]
+   NoeudDicoSynonymes *racine;                           // pointeur vers la racine de l'arbre des radicaux.
+                       ^
+../DicoSynonymes.cpp:64:2: warning:   when initialized here [-Wreorder]
+  DicoSynonymes::DicoSynonymes():
+  ^
+../DicoSynonymes.cpp: In member function ‘std::__cxx11::string TP3::DicoSynonymes::rechercherRadical(const string&) const’:
+../DicoSynonymes.cpp:112:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘float TP3::DicoSynonymes::similitude(const string&, const string&) const’:
+../DicoSynonymes.cpp:116:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘int TP3::DicoSynonymes::getNombreSens(std::__cxx11::string) const’:
+../DicoSynonymes.cpp:119:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘std::__cxx11::string TP3::DicoSynonymes::getSens(std::__cxx11::string, int) const’:
+../DicoSynonymes.cpp:122:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘std::vector<std::__cxx11::basic_string<char> > TP3::DicoSynonymes::getSynonymes(std::__cxx11::string, int) const’:
+../DicoSynonymes.cpp:126:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../DicoSynonymes.cpp: In member function ‘std::vector<std::__cxx11::basic_string<char> > TP3::DicoSynonymes::getFlexions(std::__cxx11::string) const’:
+../DicoSynonymes.cpp:129:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+Finished building: ../DicoSynonymes.cpp
+ 
+Building target: libTP3Archive.a
+Invoking: GCC Archiver
+ar -r  "libTP3Archive.a"  ./DicoSynonymes.o   
+ar: création de libTP3Archive.a
+Finished building target: libTP3Archive.a
+ 
+15:42:17 **** Incremental Build of configuration Debug for project TP3Main ****
+make all 
+make: rien à faire pour « all ».
+15:42:17 **** Incremental Build of configuration Debug for project TP3Test ****
+make all 
+Building target: TP3Test
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP3/TP3Archive/Debug" -o "TP3Test"  ./TP3Test.o   -lgtest -lgtest_main -lpthread -lTP3Archive
+Finished building target: TP3Test
+ 
+15:42:22 **** Incremental Build of configuration Debug for project TP3Test ****
+make all 
+make: rien à faire pour « all ».
+15:43:03 **** Incremental Build of configuration Debug for project TP3Archive ****
+make all 
+make: rien à faire pour « all ».
+15:43:03 **** Incremental Build of configuration Debug for project TP3Main ****
+make all 
+make: rien à faire pour « all ».
+15:43:04 **** Incremental Build of configuration Debug for project TP3Test ****
+make all 
+Building file: ../TP3Test.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -I"/home/etudiant/Bureau/TP3/TP3Archive" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"TP3Test.d" -MT"TP3Test.o" -o "TP3Test.o" "../TP3Test.cpp"
+../TP3Test.cpp: In member function ‘virtual void ArbreVide_Appartient_Test::TestBody()’:
+../TP3Test.cpp:16:44: error: expected ‘;’ before ‘)’ token
+  ASSERT_TRUE(DicoTest.appartient("banane")));
+                                            ^
+../TP3Test.cpp:16:44: error: expected primary-expression before ‘)’ token
+subdir.mk:18 : la recette pour la cible « TP3Test.o » a échouée
+make: *** [TP3Test.o] Erreur 1
+15:43:15 **** Incremental Build of configuration Debug for project TP3Archive ****
+make all 
+make: rien à faire pour « all ».
+15:43:16 **** Incremental Build of configuration Debug for project TP3Main ****
+make all 
+make: rien à faire pour « all ».
+15:43:16 **** Incremental Build of configuration Debug for project TP3Test ****
+make all 
+Building file: ../TP3Test.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -I"/home/etudiant/Bureau/TP3/TP3Archive" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"TP3Test.d" -MT"TP3Test.o" -o "TP3Test.o" "../TP3Test.cpp"
+Finished building: ../TP3Test.cpp
+ 
+Building target: TP3Test
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP3/TP3Archive/Debug" -o "TP3Test"  ./TP3Test.o   -lgtest -lgtest_main -lpthread -lTP3Archive
+Finished building target: TP3Test
+ 
+15:43:19 **** Incremental Build of configuration Debug for project TP3Test ****
+make all 
+make: rien à faire pour « all ».
+15:43:48 **** Incremental Build of configuration Debug for project TP3Archive ****
+make all 
+make: rien à faire pour « all ».
+15:43:49 **** Incremental Build of configuration Debug for project TP3Main ****
+make all 
+make: rien à faire pour « all ».
+15:43:49 **** Incremental Build of configuration Debug for project TP3Test ****
+make all 
+Building file: ../TP3Test.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -I"/home/etudiant/Bureau/TP3/TP3Archive" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"TP3Test.d" -MT"TP3Test.o" -o "TP3Test.o" "../TP3Test.cpp"
+Finished building: ../TP3Test.cpp
+ 
+Building target: TP3Test
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP3/TP3Archive/Debug" -o "TP3Test"  ./TP3Test.o   -lgtest -lgtest_main -lpthread -lTP3Archive
+Finished building target: TP3Test
+ 
+15:43:54 **** Incremental Build of configuration Debug for project TP3Test ****
+make all 
+make: rien à faire pour « all ».
+15:44:29 **** Incremental Build of configuration Debug for project TP3Archive ****
+make all 
+make: rien à faire pour « all ».
+15:44:29 **** Incremental Build of configuration Debug for project TP3Main ****
+make all 
+make: rien à faire pour « all ».
+15:44:29 **** Incremental Build of configuration Debug for project TP3Test ****
+make all 
+Building file: ../TP3Test.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -I"/home/etudiant/Bureau/TP3/TP3Archive" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"TP3Test.d" -MT"TP3Test.o" -o "TP3Test.o" "../TP3Test.cpp"
+Finished building: ../TP3Test.cpp
+ 
+Building target: TP3Test
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP3/TP3Archive/Debug" -o "TP3Test"  ./TP3Test.o   -lgtest -lgtest_main -lpthread -lTP3Archive
+Finished building target: TP3Test
+ 
+15:44:34 **** Incremental Build of configuration Debug for project TP3Test ****
+make all 
+make: rien à faire pour « all ».
+16:10:46 **** Incremental Build of configuration Debug for project TP3Test ****
+make all 
+Building file: ../TP3Test.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -I"/home/etudiant/Bureau/TP3/TP3Archive" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"TP3Test.d" -MT"TP3Test.o" -o "TP3Test.o" "../TP3Test.cpp"
+Finished building: ../TP3Test.cpp
+ 
+Building target: TP3Test
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP3/TP3Archive/Debug" -o "TP3Test"  ./TP3Test.o   -lgtest -lgtest_main -lpthread -lTP3Archive
+Finished building target: TP3Test
+ 

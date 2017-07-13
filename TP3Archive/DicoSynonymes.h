@@ -156,6 +156,8 @@ namespace TP3
 		//Un vecteur est retourné avec toutes les flexions
 		std::vector<std::string> getFlexions(std::string radical) const;
 
+		bool appartient(const std::string &) const;
+
    private:
 
 		//classe représentant un noeud dans un dictionnaire (arbre AVL)
@@ -177,18 +179,22 @@ namespace TP3
 		std::vector< std::list<NoeudDicoSynonymes*> > groupesSynonymes;	// Tableau de groupes de synonymes dont chaque élément est une liste
       	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	// de pointeurs sur des noeuds de l'arbre représentant les radicaux.
       // Ajoutez vos méthodes privées ici !
-		void _ajouterRadical(NoeudDicoSynonymes *& noeud, const std::string& motRadical);
-		void _miseAJourHauteurNoeud(NoeudDicoSynonymes *& noeud);
-		int _hauteur(NoeudDicoSynonymes *& noeud) const;
-		void _balancerUnNoeud(NoeudDicoSynonymes *& noeud);
-		bool _debalancementAGauche(NoeudDicoSynonymes *& noeud) const;
-		bool _debalancementADroite(NoeudDicoSynonymes *& noeud) const;
-		bool _sousArbrePencheAGauche(NoeudDicoSynonymes *& noeud) const;
-		bool _sousArbrePencheADroite(NoeudDicoSynonymes *& noeud) const;
-		void _zigZigGauche(NoeudDicoSynonymes *& noeudCritique);
-		void _zigZigDroite(NoeudDicoSynonymes *& noeudCritique);
-		void _zigZagGauche(NoeudDicoSynonymes *& noeud);
-		void _zigZagDroite(NoeudDicoSynonymes *& noeud);
+		void _ajouterRadical(NoeudDicoSynonymes *&, const std::string&);
+		void _enleverRadical(NoeudDicoSynonymes *&, const std::string&);
+		void _miseAJourHauteurNoeud(NoeudDicoSynonymes *&);
+		int _hauteur(NoeudDicoSynonymes *&) const;
+		void _balancerUnNoeud(NoeudDicoSynonymes *&);
+		bool _debalancementAGauche(NoeudDicoSynonymes *&) const;
+		bool _debalancementADroite(NoeudDicoSynonymes *&) const;
+		bool _sousArbrePencheAGauche(NoeudDicoSynonymes *&) const;
+		bool _sousArbrePencheADroite(NoeudDicoSynonymes *&) const;
+		void _zigZigGauche(NoeudDicoSynonymes *&);
+		void _zigZigDroite(NoeudDicoSynonymes *&);
+		void _zigZagGauche(NoeudDicoSynonymes *&);
+		void _zigZagDroite(NoeudDicoSynonymes *&);
+		bool _aDeuxfils(NoeudDicoSynonymes *&) const;
+		NoeudDicoSynonymes* _min(NoeudDicoSynonymes *) const;
+		bool _appartient(NoeudDicoSynonymes * const &, const std::string &) const;
 
    };
 

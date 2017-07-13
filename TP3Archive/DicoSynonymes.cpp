@@ -62,7 +62,7 @@ namespace TP3
 	//Mettez l'implantation des autres méthodes demandées ici.
 
 	DicoSynonymes::DicoSynonymes():
-				nbRadicaux(0){
+				nbRadicaux(0), racine(nullptr){
 
 	}
 
@@ -74,6 +74,7 @@ namespace TP3
 	}
 
 	void DicoSynonymes::ajouterRadical(const std::string& motRadical) {
+		ASSERTION(!appartient(motRadical));
 		_ajouterRadical(racine, motRadical);
 	}
 
@@ -86,6 +87,9 @@ namespace TP3
 	}
 
 	void DicoSynonymes::supprimerRadical(const std::string& motRadical) {
+		ASSERTION(estVide());
+		ASSERTION(appartient(motRadical));
+		_enleverRadical(racine, motRadical);
 	}
 
 	void DicoSynonymes::supprimerFlexion(const std::string& motRadical,
@@ -128,6 +132,8 @@ namespace TP3
 			const std::string& motRadical) {
 		if (noeud == nullptr){
 			noeud = new NoeudDicoSynonymes(motRadical);
+			nbRadicaux++;
+			return;
 		}else if (noeud->gauche->radical < motRadical){
 			_ajouterRadical(noeud->gauche, motRadical);
 		}else {
@@ -231,6 +237,77 @@ namespace TP3
 		_zigZigDroite(noeud);
 	}
 
+	void DicoSynonymes::_enleverRadical(NoeudDicoSynonymes *& noeud,
+				const std::string& motRadical) {
+		if (noeud == nullptr){
+			throw std::logic_error("Le noeud est inexistant");
+		}
+
+		if (noeud->radical > motRadical){
+			_enleverRadical(noeud->gauche, motRadical);
+		}else if (noeud->radical < motRadical){
+			_enleverRadical(noeud->droit, motRadical);
+		}else{
+			if (_hauteur(noeud) == 0){
+				delete noeud;
+				noeud = nullptr;
+				nbRadicaux--;
+			}else if (!_aDeuxfils(noeud)){
+				if (noeud->gauche != nullptr){
+					std::swap(noeud->radical, noeud->gauche->radical);
+					_enleverRadical(noeud->gauche, motRadical);
+				}else{
+					std::swap(noeud->radical, noeud->droit->radical);
+					_enleverRadical(noeud->droit, motRadical);
+				}
+			}else{
+				NoeudDicoSynonymes * minDroit = _min(noeud->droit);
+				std::swap(noeud->radical, minDroit->radical);
+				_enleverRadical(noeud->droit, motRadical);
+			}
+		}
+
+		_miseAJourHauteurNoeud(noeud);
+		_balancerUnNoeud(noeud);
+
+		}
+
+	bool DicoSynonymes::_aDeuxfils(NoeudDicoSynonymes *& noeud) const	{
+		if (noeud == nullptr){
+			return false;
+		}
+		return noeud->gauche != nullptr && noeud->droit != nullptr;
+	}
+
+	DicoSynonymes::NoeudDicoSynonymes* DicoSynonymes::_min(NoeudDicoSynonymes * noeud) const {
+		if(noeud->gauche == nullptr){
+			return noeud;
+		}
+		return _min(noeud->gauche);
+
+	}
+
+	bool DicoSynonymes::appartient(const std::string& motRadical) const {
+		return _appartient(racine, motRadical);
+	}
+
+	bool DicoSynonymes::_appartient(NoeudDicoSynonymes* const & noeud,
+			const std::string& motRadical) const {
+		if (noeud == nullptr){
+			return false;
+		}else if (noeud->radical == motRadical){
+			return true;
+		}else if (noeud->radical > motRadical){
+			return _appartient(noeud->gauche, motRadical);
+		}else{
+			return _appartient(noeud->droit, motRadical);
+		}
+	}
+
+
+
+
 
 } //Fin du namespace
+
 

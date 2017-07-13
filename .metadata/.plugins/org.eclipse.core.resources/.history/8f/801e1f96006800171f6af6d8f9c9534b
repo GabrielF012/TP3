@@ -1,0 +1,6 @@
+#include "DicoSynonymes.h"
+#include "gtest/gtest.h"
+
+TEST(ArbreVide, Appartient){
+	DicoSynonymes DicoTest;
+}
